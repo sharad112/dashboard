@@ -1,13 +1,304 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.whole-wrapper {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
 }
+.left-comp {
+  height: 100%;
+  width: 20%;
+  border-right: 2px solid white;
+  background-color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.left-top {
+  width: 100%;
+  margin-top: 2rem;
+}
+.actual-sidebar {
+  display: flex;
+  width: 95%;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0.5rem auto;
+  cursor: pointer;
+  height: 3rem;
+  border-radius: 0.5rem;
+}
+.actual-sidebar h1 {
+  font-size: 1rem;
+  text-transform: capitalize;
+  width: 70%;
+}
+.actual-sidebar p {
+  font-size: 1.5rem;
+}
+.actual-sidebar:hover {
+  background-color: black;
+  color: white;
+}
+.left-bottom
+{
+  position: absolute;
+  bottom: 2%;
+}
+.actual-bot {
+  height: 23rem;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  border-radius: 0.5rem;
+  background-color: white;
+ 
+}
+.actual-bot h1 {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 1rem 0rem;
+  padding-top: 5.5rem;
+}
+.left-arrow {
+  position: absolute;
+  font-size: 3rem;
+  top: 1%;
+  left: 50%;
+  transform: translate(-50%);
+  margin-top: 1rem;
+}
+.middle-comp {
+  width: 80%;
+  height: 100vh;
+  background-color: whitesmoke;
+  border-top: 3px solid white;
+}
+.topnav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 0 auto;
+  height: 4rem;
+  background-color: #f3f3f3;
+  align-items: center;
+  padding: 0rem 0.2rem;
+  border-bottom: 5px solid white;
+}
+.top-left {
+  width: 30%;
+  position: relative;
+}
+.top-left input {
+  width: 90%;
+  height: 2.5rem;
+  border: none;
+  background-color: white;
+  border-radius: 1rem;
+}
+::placeholder {
+  padding-left: 1rem;
+}
+.search-btn {
+  position: absolute;
+  top: 50%;
+  right: 15%;
+  transform: translate(-40%, -50%);
+}
+.right-nav {
+  display: flex;
+  width: 25%;
+  justify-content: space-around;
+  align-items: center;
+}
+.icon1 {
+  font-size: 1.5rem;
+  margin-right: 1.3rem;
+  cursor: pointer;
+}
+.users {
+  display: flex;
+  width: 60%;
+  justify-content: space-between;
+  border-left: 1px solid black;
+  padding-left: 2rem;
+}
+.info h1 {
+  font-size: 1.1rem;
+  text-transform: capitalize;
+}
+.info p {
+  font-size: 0.9rem;
+  text-transform: capitalize;
+  margin-top: -0.3rem;
+  color: grey;
+}
+.img img {
+  height: 3rem;
+  width: 3rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.overview-wrapper {
+  margin-top: 2rem;
+  width: 100%;
+  position: relative;
+  height: 17rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.overview {
+  height: 14rem;
+  width: 14rem;
+  background-color: white;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+.overview-wrapper::before {
+  content: "overview";
+  position: absolute;
+  top: -7%;
+  left: 2%;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  font-weight: bolder;
+  margin-bottom: 1rem;
+}
+.icon-1 {
+  font-size: 2rem;
+  background-color: gainsboro;
+  color: black;
+  border-radius: 50%;
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.overview h1 {
+  margin-top: 0.5rem;
+  font-size: 2.4rem;
+}
+.req {
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  /* color: black; */
+  color: grey;
+  margin-top: -0.6rem;
+}
+.overview h3 {
+  margin-top: 2rem;
+}
+.overview:hover {
+  background-color: black;
+  color: white;
+}
+.bar-chart {
+  height: 45vh;
+  width: 98%;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.left-chart {
+  height: 100%;
+  width: 59%;
+  background-color: white;
+  padding-left: 2rem;
+  border-radius: 2rem;
+}
+.left-chart h1 {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  margin: 0.8rem 0.5rem;
+}
+.right-chart {
+  height: 100%;
+  border-radius: 2rem;
+  width: 39%;
+  background-color: white;
+}
+.quo-wrapper {
+  height: 90vh;
+  width: 100%;
+}
+.quo-card-wrap {
+  width: 100%;
+}
+.quo-card {
+  margin: 1rem auto;
+  height: 5rem;
+  width: 95%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0rem 1.3rem;
+  align-items: center;
+  border-radius: 0.5rem;
+}
+.name {
+  display: flex;
+}
+.details {
+  margin-left: 1.2rem;
+}
+.quo-card h1 {
+  font-size: 1.1rem;
+  text-transform: capitalize;
+}
+.img1 img {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 10%;
+}
+.quo-card p {
+  margin-top: 0.2rem;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  color: grey;
+}
+.name1 {
+  display: flex;
+  align-items: center;
+}
+.name1 h1 {
+  margin-left: 1rem;
+}
+.name1 img {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.status {
+  background-color: #f7f6f9;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+.status h1 {
+  font-size: 1rem;
+}
+.wrapped-sidebar 
+{
+  position: absolute;
+  top: 5%;
+  left: 0%;
+  width: 20%;
+}
+ 
